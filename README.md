@@ -1,6 +1,14 @@
-# [Multi-Terrain Humanoid Locomotion Challenge in Human-Robot-Scene Interaction and Collaboration (ICCV 2025 Workshop)](https://human-robot-scene.github.io/Terrain-Challenge/)
+# Magic-Locomotion Code For Terrain Challenge
 
-![Workshop](images/workshop.png)
+[Multi-Terrain Humanoid Locomotion Challenge in Human-Robot-Scene Interaction and Collaboration (ICCV 2025 Workshop)](https://human-robot-scene.github.io/Terrain-Challenge/)
+
+
+## Our Method Overview
+1. We first levergae all privileged information to train teacher policy following the original repo.
+2. We then distill the knowledge from teacher policy to student policy as shown in rsl_rl/rsl_rl/algorithms/distillation.py
+3. Finally, we finetune the student policy to get the best performance.
+
+# Original Repo README
 
 ## Introduction
 

@@ -54,11 +54,7 @@ def train(args):
     
     if args.no_wandb:
         mode = "disabled"
-
-    # wandb.init(project=args.proj_name, name=args.exptid, entity="994153566-swjtu", group=args.exptid[:3], mode=mode, dir="../../logs")
-    # wandb.save(LEGGED_GYM_ENVS_DIR + "/base/legged_robot_config.py", policy="now")
-    # wandb.save(LEGGED_GYM_ENVS_DIR + "/base/legged_robot.py", policy="now")
-    
+        
     teacher_path = 'distillation/teacher/tec.pt'
     env, env_cfg = task_registry.make_env(name=args.task, args=args)
     runner, train_cfg = task_registry.make_alg_runner(log_root = log_pth, env=env, name=args.task, teacher_path = teacher_path,args=args)
