@@ -1,5 +1,7 @@
 # Magic-Locomotion Code For Terrain Challenge
 
+2th Place in ICCV 2025 Challenge Track
+
 [Multi-Terrain Humanoid Locomotion Challenge in Human-Robot-Scene Interaction and Collaboration (ICCV 2025 Workshop)](https://human-robot-scene.github.io/Terrain-Challenge/)
 
 
