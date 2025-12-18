@@ -1,16 +1,15 @@
-🚀 Magic-Locomotion
-ICCV 2025 Multi-Terrain Humanoid Locomotion Challenge - 2nd Place Solution
+# 🚀 Magic-Locomotion
+
+## ICCV 2025 Multi-Terrain Humanoid Locomotion Challenge - 2nd Place Solution
 
 
-[![Challenge Website](https://img.shields.io/badge/Challenge-Human--Robot--Scene%20Interaction-blue?logo=iclr&logoColor=white&style=flat-square)](https://human-robot-scene.github.io/Terrain-Challenge/)
+[![Challenge Website](https://img.shields.io/badge/Challenge-Human--Robot--Scene%20Interaction-blue?logo=iclr&logoColor=white&style=flat-square)](https://human-robot-scene.github.io/Terrain-Challenge/) [![PDF](https://img.shields.io/badge/Paper-Report%20PDF-red?logo=adobe-acrobat-reader&logoColor=white&style=flat-square)](https://github.com/yuechen0614/Magic-Locomotion/blob/main/docs/report.pdf)
 
-[![PDF](https://img.shields.io/badge/Paper-Report%20PDF-red?logo=adobe-acrobat-reader&logoColor=white&style=flat-square)](https://github.com/yuechen0614/Magic-Locomotion/docs/report.pdf)
-
-🏆 Challenge Introduction
+### 🏆 Challenge Introduction
 This repository contains the official implementation of the 2nd Place solution for the Multi-Terrain Humanoid Locomotion Challenge (ICCV 2025 Workshop on Human-Robot-Scene Interaction and Collaboration). Our method achieves state-of-the-art performance on diverse terrain locomotion tasks for humanoid robots.
 
 
-📋 Method Overview
+### 📋 Method Overview
 
 Our approach follows a three-stage training paradigm to efficiently transfer privileged information to a lightweight deployable policy:
 
