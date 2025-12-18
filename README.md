@@ -1,14 +1,24 @@
-# Magic-Locomotion Code For Terrain Challenge
-
-2th Place in ICCV 2025 Challenge Track
-
-[Multi-Terrain Humanoid Locomotion Challenge in Human-Robot-Scene Interaction and Collaboration (ICCV 2025 Workshop)](https://human-robot-scene.github.io/Terrain-Challenge/)
+🚀 Magic-Locomotion
+ICCV 2025 Multi-Terrain Humanoid Locomotion Challenge - 2nd Place Solution
 
 
-## Our Method Overview
-1. We first levergae all privileged information to train teacher policy following the original repo.
-2. We then distill the knowledge from teacher policy to student policy as shown in rsl_rl/rsl_rl/algorithms/distillation.py
-3. Finally, we finetune the student policy to get the best performance.
+[![Challenge Website](https://img.shields.io/badge/Challenge-Human--Robot--Scene%20Interaction-blue?logo=iclr&logoColor=white&style=flat-square)](https://human-robot-scene.github.io/Terrain-Challenge/)
+
+[![PDF](https://img.shields.io/badge/Paper-Report%20PDF-red?logo=adobe-acrobat-reader&logoColor=white&style=flat-square)](https://github.com/yuechen0614/Magic-Locomotion/docs/tech.pdf)
+
+🏆 Challenge Introduction
+This repository contains the official implementation of the 2nd Place solution for the Multi-Terrain Humanoid Locomotion Challenge (ICCV 2025 Workshop on Human-Robot-Scene Interaction and Collaboration). Our method achieves state-of-the-art performance on diverse terrain locomotion tasks for humanoid robots.
+
+
+📋 Method Overview
+
+Our approach follows a three-stage training paradigm to efficiently transfer privileged information to a lightweight deployable policy:
+
+**1. Teacher Policy with Privileged Information:** First, we leverage all available privileged information (full state observations, terrain priors, etc.) to train a high-performance teacher policy, following the baseline implementation from the original challenge repository.
+
+**2. Progressive Teacher-Student Distillation:** We distill the teacher's expertise into a compact student policy using our customized distillation framework. See implementation details in: rsl_rl/rsl_rl/algorithms/distillation.py
+
+**3. Defect-Aware Fine-Tuning:** Finally, we finetune the student policy on target terrains to optimize adaptability and final performance.
 
 # Original Repo README
 
